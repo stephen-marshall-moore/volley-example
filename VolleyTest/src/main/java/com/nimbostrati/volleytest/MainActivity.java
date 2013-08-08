@@ -56,7 +56,7 @@ public class MainActivity extends Activity {
         mRequestQueue = Volley.newRequestQueue(this);
         mImageLoader = new ImageLoader(mRequestQueue, new LruBitmapCache(10));
 
-        //String url = "http://pipes.yahooapis.com/pipes/pipe.run?_id=giWz8Vc33BG6rQEQo_NLYQ&_render=json";
+        //Use yahoo which connects to Rotten Tomatoes' Top Ten
 
         String url = "http://pipes.yahoo.com/pipes/pipe.run?_id=23ff425a7320cebd218fcc8cd194b256&_render=json";
         pd = ProgressDialog.show(this,"Please Wait..", "Please Wait...");
