@@ -8,6 +8,9 @@
 # Java class files
 *.class
 
+# tilde files
+*~
+
 # generated files
 build/
 bin/
