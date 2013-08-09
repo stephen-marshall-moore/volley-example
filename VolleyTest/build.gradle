@@ -1,15 +1,8 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.5+'
-    }
-}
 apply plugin: 'android'
 
 dependencies {
     compile files('libs/android-support-v4.jar')
+	compile project(':Libraries:android-volley-master')
 }
 
 android {
@@ -17,7 +10,7 @@ android {
     buildToolsVersion "17.0.0"
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 8
         targetSdkVersion 17
     }
 }
